@@ -35,7 +35,7 @@ kubectl get pods
 
 Read logs 
 ```
-kubectl logs <name of jobpod>
+kubectl logs <name of jobpod> #check kubectl get pod
 ```
 
 Describe the job
@@ -114,5 +114,9 @@ kubectl describe cronjobs
 To edit the running cronjob
 ```
 kubectl edit cronjob <cronjob-name>
+```
+Delete the cronjob
+```
+kubectl delete cronjob <cronjobname>
 ```
 To generate CronJob schedule expressions, you can also use web tools like https://crontab.guru/
