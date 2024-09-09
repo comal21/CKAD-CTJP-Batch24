@@ -264,7 +264,7 @@ Access you application on the port 32123
 ### Task 4: Canary Deployment in Kubernetes 
 
 Service and deployment should have a common label.
-Add `type: web-app` to yaml file of both the deployments and apply again.
+Add `type: web-app` to yaml file of both the deployments in the selector.matchLabels and template.metadata.labels 
 
 Use `replace` , as apply command might throw an error.
 ```
