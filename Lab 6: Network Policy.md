@@ -33,7 +33,7 @@ kubectl -n finance run pod2 --image centos -- sleep 7000
 ```
 Verify the pod in the finance namespace
 ```
-kubectl -n devops get po
+kubectl -n finance get po
 ```
 
 Enter the pod in finance namespace  and check its connectivity with a pod in devops namespace
