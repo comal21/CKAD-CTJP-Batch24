@@ -83,7 +83,7 @@ kubectl get svc
 ```
 Change the type of wordpress service to ***NodePort***
 ```
-kubectl edit svc wordpres
+kubectl edit svc my-wordpress
 ```
 verify the changes
 ```
@@ -108,7 +108,7 @@ helm ls
 ```
  To remove a Helm repository from your local Helm client configuration
 ```
-helm repo remove my-repo
+helm repo remove my-bitnami-repo
 ```
 To remove Helm package manager
 ```
