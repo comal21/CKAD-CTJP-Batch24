@@ -33,7 +33,7 @@ spec:
   - name: nlns-nginx-ctr
     image: nginx
   nodeSelector:
-    disktype: ssd
+    disktype: ssd1
 
 ```
 ```
