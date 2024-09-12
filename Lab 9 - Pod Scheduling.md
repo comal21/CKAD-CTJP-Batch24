@@ -12,11 +12,11 @@ kubectl get nodes --show-labels
 ```
 Label the node
 ```
-kubectl label nodes node1 disktype=ssd1
+kubectl label nodes node1 disktype=ssd
 ```
 List your nodes to check labels 
 ```
-kubectl get nodes --show-labels | grep "disktype=ssd1"
+kubectl get nodes --show-labels | grep "disktype=ssd"
 ```
 ```
 vi nlns-pod.yaml
