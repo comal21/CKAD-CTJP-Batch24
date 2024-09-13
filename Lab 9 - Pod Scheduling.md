@@ -55,7 +55,7 @@ kubectl label nodes node1 disktype=ssd
 ```
 List your nodes to check labels 
 ```
-kubectl get nodes --show-labels | grep "disktype=ssd"
+kubectl get nodes --show-labels | grep "disktype=ssd1"
 ```
 List the pods. You will see the the Pod has gone into the running state.
 ```
