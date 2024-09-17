@@ -51,22 +51,10 @@ Check the details of the Service Account assosciated with the pod
 ```
 cd /var/run/secrets/kubernetes.io/serviceaccount/ && ls
 ```
-```
-ls
-```
-```
-cat ca.crt
-```
-```
-cat token
-```
-```
-cat namespace
-```
 
 Make an API call to list all the pods in the Namespace ns1
 ```
-curl -v --cacert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt -H "Authorization: Bearer $(cat /var/run/secrets/kubernetes.io/serviceaccount/token)" https://kubernetes.default/api/v1/namespaces/ns1/pods | grep '"name": "pod'
+curl -v --cacert /var/run/secrets/kubernetes.io/serviceaccount/ca.crt -H "Authorization: Bearer $(cat /var/run/secrets/kubernetes.io/serviceaccount/token)" https://kubernetes.default/api/v1/namespaces/ns1/pods 
 ```
 The API call is forbidden
 ```
