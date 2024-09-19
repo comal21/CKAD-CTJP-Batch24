@@ -221,7 +221,7 @@ exit
 ###  Secret
 ### Task 1:Imperative
 ```
-kubectl create secret generic secret-1 --from-literal=db_user=admin --from-literal=db_pwd=123
+kubectl create secret generic secret-1 --from-literal=db_user=dXNlcgo= --from-literal=db_pwd=bXlwd2QK
 ```
 ```
 kubectl get secret
